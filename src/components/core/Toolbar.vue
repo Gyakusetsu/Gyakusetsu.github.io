@@ -1,6 +1,5 @@
 <template>
   <v-app-bar
-    v-scroll="onScroll"
     :color="isTransparent ? 'transparent' : '#F5F5F5'"
     app
     flat
