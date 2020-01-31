@@ -17,7 +17,7 @@
 
         <v-layout row wrap align-center justify-center>
           <v-flex xs10 mt-10>
-            <base-text > Project contributions heat map made by me </base-text>
+            <base-text>Project contributions heat map made by me</base-text>
           </v-flex>
           <my-github-calendar class="mycalendar" />
           <v-flex xs10 md10>
@@ -29,6 +29,8 @@
               I love games, computer games and I am always looking forward to new challenges. Do you have one for me?
             </base-text>
             <base-btn class="mt-4" :onclick="redirectToResumeCV">Learn More about me!</base-btn>
+            <v-divider :vertical="true" class="mx-2"/>
+            <v-btn class="mt-4" @click="redirectToSource"> View page source</v-btn>
           </v-flex>
         </v-layout>
 
@@ -47,7 +49,18 @@ export default {
   methods: {
     redirectToResumeCV() {
       // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
-      window.open("https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt")
+      this.redirectMe(
+        "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
+      );
+    },
+    redirectToSource() {
+      // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
+      this.redirectMe(
+        "https://github.com/Gyakusetsu/home/"
+      );
+    },
+    redirectMe(url) {
+      window.open(url);
     }
   }
 };
