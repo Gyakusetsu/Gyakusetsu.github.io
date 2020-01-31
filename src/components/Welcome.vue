@@ -2,7 +2,7 @@
   <section id="welcome" class="hide-overflow">
     <v-layout>
       <v-flex hidden-sm-and-down md6>
-        <v-img :src="require('@/assets/welcome.png')" height="100vh" />
+        <v-img :src="require('@/assets/home.jpg')" height="100vh" />
       </v-flex>
 
       <v-flex
@@ -16,23 +16,19 @@
         <!-- <base-bubble-1 style="transform: rotate(180deg) translateY(25%)" /> -->
 
         <v-layout row wrap align-center justify-center>
-          <v-container>
-            <!-- Prepare a container for your calendar. -->
-            <my-github-calendar class="mycalendar" />
-          </v-container>
-          <v-flex xs10 md6>
-            <base-heading>Welcome!</base-heading>
+          <v-flex xs10 mt-10>
+            <base-text > Project contributions heat map made by me </base-text>
+          </v-flex>
+          <my-github-calendar class="mycalendar" />
+          <v-flex xs10 md10>
+            <base-heading>Hi, I'm Reymar</base-heading>
             <base-text>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
-              <br />Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
+              I am a 21-year old software engineer trying to make the cyber world a bit better.
+              How? By contributing to open-source projects and being passionate about my career.
+              <br />I am an anime and music lover, workaholic,
+              I love games, computer games and I am always looking forward to new challenges. Do you have one for me?
             </base-text>
-            <base-btn class="mt-4">Learn More!</base-btn>
+            <base-btn class="mt-4" :onclick="redirectToResumeCV">Learn More about me!</base-btn>
           </v-flex>
         </v-layout>
 
@@ -47,12 +43,18 @@ export default {
   components: {
     MyGithubCalendar: () => import("@/components/MyGithubCalendar")
     // CoreFooter: () => import('@/components/core/Footer'),
+  },
+  methods: {
+    redirectToResumeCV() {
+      // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
+      window.open("https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt")
+    }
   }
 };
 </script>
 
 <style scoped>
 .mycalendar {
-  margin: 10%;
+  margin: 0 8% 8% 8%;
 }
 </style>
