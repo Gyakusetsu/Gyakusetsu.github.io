@@ -56,7 +56,7 @@ export default {
     redirectToSource() {
       // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
       this.redirectMe(
-        "https://github.com/Gyakusetsu/home/"
+        "https://github.com/Gyakusetsu/gyakusetsu.github.io/"
       );
     },
     redirectMe(url) {
