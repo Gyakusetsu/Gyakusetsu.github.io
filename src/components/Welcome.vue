@@ -17,7 +17,7 @@
 
         <v-layout row wrap align-center justify-center>
           <v-flex xs10 mt-10>
-            <base-text>Project contributions heat map made by me</base-text>
+            <base-text>Project contributions activity heat map </base-text>
           </v-flex>
           <my-github-calendar class="mycalendar" />
           <v-flex xs10 md10>
