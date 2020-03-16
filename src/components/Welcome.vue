@@ -1,7 +1,7 @@
 <template>
   <section id="welcome" class="hide-overflow">
     <v-layout>
-      <v-flex hidden-sm-and-down md6>
+      <v-flex id="myimage"  hidden-sm-and-down md6>
         <v-img :src="require('@/assets/home.jpg')" height="100vh" />
       </v-flex>
 
@@ -31,6 +31,8 @@
             <base-btn class="mt-4" :onclick="redirectToResumeCV">Learn More about me!</base-btn>
             <v-divider :vertical="true" class="mx-2" />
             <v-btn class="mt-4" @click="redirectToSource">View page source</v-btn>
+            <v-divider :vertical="true" class="mx-2" />
+            <v-btn class="mt-4 red" @click="redirectToCovid">COVID-19 Map</v-btn>
           </v-flex>
         </v-layout>
 
@@ -57,6 +59,10 @@ export default {
       // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
       this.redirectMe("https://github.com/Gyakusetsu");
     },
+    redirectToCovid() {
+      // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
+      this.redirectMe("http://gyakusetsu.github.io/COVID-19-Watcher");
+    },
     redirectMe(url) {
       window.open(url);
     }
@@ -66,6 +72,10 @@ export default {
 
 <style scoped>
 .mycalendar {
-  margin: 0 8% 8% 8%;
+  margin: 0 8% 2% 8%;
+}
+
+#myimage{
+  padding: 0 26px 0 26px;
 }
 </style>
