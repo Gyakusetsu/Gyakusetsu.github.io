@@ -32,7 +32,7 @@
             <v-divider :vertical="true" class="mx-2" />
             <v-btn class="mt-4" @click="redirectToSource">View page source</v-btn>
             <v-divider :vertical="true" class="mx-2" />
-            <v-btn class="mt-4 red" @click="redirectToCovid">COVID-19 Map</v-btn>
+            <v-btn class="mt-4 orange" @click="redirectToCovid">COVID-19 Map</v-btn>
           </v-flex>
         </v-layout>
 
