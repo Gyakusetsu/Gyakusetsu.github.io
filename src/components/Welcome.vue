@@ -61,7 +61,7 @@ export default {
     },
     redirectToCovid() {
       // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
-      this.redirectMe("http://gyakusetsu.github.io/COVID-19-Watcher");
+      this.redirectMe("http://gyakusetsu.github.io/coronavirus-map");
     },
     redirectMe(url) {
       window.open(url);
