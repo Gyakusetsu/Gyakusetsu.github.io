@@ -1,6 +1,7 @@
 <template>
   <div>
     <welcome />
+     <recent-projects />
     <!-- <my-github-calendar/> -->
     <!-- <recent-projects />
     <services />
@@ -15,7 +16,7 @@ export default {
     // AboutMe: () => import("@/components/AboutMe"),
     // // MyGithubCalendar: () => import("@/components/MyGithubCalendar"),
     // GetInTouch: () => import("@/components/GetInTouch"),
-    // RecentProjects: () => import("@/components/RecentProjects"),
+    RecentProjects: () => import("@/components/RecentProjects"),
     // Services: () => import("@/components/Services"),
     Welcome: () => import("@/components/Welcome")
   }
