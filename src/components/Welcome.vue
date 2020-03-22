@@ -1,8 +1,18 @@
 <template>
   <section id="welcome" class="hide-overflow">
     <v-layout>
-      <v-flex id="myimage"  hidden-sm-and-down md6>
-        <v-img :src="require('@/assets/home.jpg')" height="100vh" />
+      <v-flex
+        xs12
+        md6
+        align-content-space-between
+        layout
+        :pa-5="$vuetify.breakpoint.smAndDown"
+        wrap
+         hidden-sm-and-down 
+        style="
+  background-color: #282a36; padding: 0 15px 1000px 15px"
+      >
+        <v-img id="myimage" :src="require('@/assets/life.png')" />
       </v-flex>
 
       <v-flex
@@ -75,7 +85,7 @@ export default {
   margin: 0 8% 2% 8%;
 }
 
-#myimage{
-  padding: 0 26px 0 26px;
+#myimage {
+  height: 100%;
 }
 </style>
