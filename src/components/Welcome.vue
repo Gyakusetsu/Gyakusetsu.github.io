@@ -1,23 +1,20 @@
 <template>
   <section id="welcome" class="hide-overflow">
-    <v-layout>
+    <v-layout style="height:100vh">
       <v-flex
-        xs12
-        md6
-        align-content-space-between
+        align-center
         layout
         :pa-5="$vuetify.breakpoint.smAndDown"
         wrap
-         hidden-sm-and-down 
-        style="
-  background-color: #282a36; padding: 0 15px 1000px 15px"
+        hidden-sm-and-down
+        style="background-color: #282a36; height:100%"
       >
         <v-img id="myimage" :src="require('@/assets/life.png')" />
       </v-flex>
 
       <v-flex
         xs12
-        md6
+        md7
         align-content-space-between
         layout
         :pa-5="$vuetify.breakpoint.smAndDown"
@@ -83,9 +80,5 @@ export default {
 <style scoped>
 .mycalendar {
   margin: 0 8% 2% 8%;
-}
-
-#myimage {
-  height: 100%;
 }
 </style>
