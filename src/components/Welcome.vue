@@ -37,7 +37,7 @@
             </base-text>
             <base-btn class="mt-4" :onclick="redirectToResumeCV">Learn More about me!</base-btn>
             <v-divider :vertical="true" class="mx-2" />
-            <v-btn class="ma-2" @click="redirectToSource">
+            <v-btn class="mt-4" @click="redirectToSource">
               <v-icon left dark>mdi-github</v-icon> Gyakusetsu
             </v-btn>
             <v-divider :vertical="true" class="mx-2" />
