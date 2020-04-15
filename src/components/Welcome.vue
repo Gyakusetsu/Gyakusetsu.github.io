@@ -35,13 +35,15 @@
               <br />I am an anime and music lover, workaholic,
               I love games, computer games and I am always looking forward to new challenges. Do you have one for me?
             </base-text>
-            <base-btn class="mt-4" :onclick="redirectToResumeCV">Learn More about me!</base-btn>
-            <v-divider :vertical="true" class="mx-2" />
-            <v-btn class="mt-4" @click="redirectToSource">
-              <v-icon left dark>mdi-github</v-icon> Gyakusetsu
-            </v-btn>
-            <v-divider :vertical="true" class="mx-2" />
-            <v-btn class="mt-4 orange" @click="redirectToCovid">COVID-19 Map</v-btn>
+            <form action="mailto:sreymarbc@gmail.com">
+              <base-btn class="mt-4" type="submit">Email me!</base-btn>
+              <v-divider :vertical="true" class="mx-2" />
+              <v-btn class="mt-4" @click="redirectToSource">
+                <v-icon left dark>mdi-github</v-icon>Gyakusetsu
+              </v-btn>
+              <v-divider :vertical="true" class="mx-2" />
+              <v-btn class="mt-4 orange" @click="redirectToCovid">COVID-19 Map</v-btn>
+            </form>
           </v-flex>
         </v-layout>
 
@@ -58,12 +60,12 @@ export default {
     // CoreFooter: () => import('@/components/core/Footer'),
   },
   methods: {
-    redirectToResumeCV() {
-      // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
-      this.redirectMe(
-        "https://drive.google.com/open?id=1O59eNDG3EbRbipjUNIPBIY41WnS2x6Xl"
-      );
-    },
+    // redirectToResumeCV() {
+    //   // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
+    //   this.redirectMe(
+    //     "mailto:sreymarbc@gmail.com"
+    //   );
+    // },
     redirectToSource() {
       // window.location.href = "https://drive.google.com/open?id=1a7BAAsDKU-iI57K4MlUJ5r6JchFP7Xxt"
       this.redirectMe("https://github.com/Gyakusetsu");
