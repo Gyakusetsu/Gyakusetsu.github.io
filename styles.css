@@ -15,22 +15,24 @@ body {
 
 .first-half {
     background-color: #282a36;
-    width: 40vw;
+    width: 40%;
 }
 
 .life-code {
     margin: 26px;
     margin-top: 40px;
+    object-fit: cover;
 }
 
 .second-half {
     padding: 30px;
-    width: 60vw;
+    width: 60%;
     height: 100vh;
+    background-color: white;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .first-half {
         display: none;
     }
