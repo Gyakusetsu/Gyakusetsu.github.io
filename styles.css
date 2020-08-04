@@ -1,21 +1,32 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    margin: 0;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .main-div {
     background: white;
-
     display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
 }
 
 .first-half {
+    background-color: #282a36;
     width: 40vw;
 }
 
+.life-code {
+    margin: 26px;
+}
+
 .second-half {
-    margin: 30px;
+    padding: 30px;
     width: 60vw;
+    height: 100vh;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 }
 
 @media screen and (max-width: 992px) {
