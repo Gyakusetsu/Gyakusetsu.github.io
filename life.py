@@ -1,7 +1,5 @@
-from species import Human
 
-
-class Reymar(Human.DNA):
+class Reymar(Human):
 
     alive = True
 
@@ -10,7 +8,7 @@ class Reymar(Human.DNA):
 
     def startLife(self):
         try:
-            while (alive):
+            while (self.alive):
                 self.sleep()
                 self.eat()
                 self.code()
@@ -22,4 +20,3 @@ class Reymar(Human.DNA):
         identifiedProblem.learn()
         identifiedProblem.solve()
         self.startLife()
-

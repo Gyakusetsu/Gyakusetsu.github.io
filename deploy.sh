@@ -4,7 +4,11 @@
 set -e
 
 # build
-npm run build
+mkdir dist
+
+mv favicon.ico dist
+mv index.html dist
+mv CNAME dist
 
 # navigate into the build output directory
 cd dist
