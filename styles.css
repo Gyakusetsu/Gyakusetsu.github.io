@@ -20,6 +20,7 @@ body {
 
 .life-code {
     margin: 26px;
+    margin-top: 40px;
 }
 
 .second-half {
@@ -35,7 +36,6 @@ body {
     }
     
     .second-half {
-        margin: 30px;
         width: 100vw;
     }
   }
