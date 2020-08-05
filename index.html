@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://ackee.taromaru.xyz/tracker.js" data-ackee-server="https://ackee.taromaru.xyz"
+    data-ackee-domain-id="937a3649-86f9-45ab-a15b-2529df15a954"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157508124-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-157508124-1");
+  </script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Gyakusetsu</title>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but home doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <div class="main-div">
+    <div class="first-half">
+      <img class="life-code" src="life.png" alt="life-code">
+    </div>
+    <div class="second-half">
+      <!-- Prepare a container for your calendar. -->
+      <span class="calendar-header">My GitHub Calendar</span>
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+      <span class="intro">Hi, I'm Reymar</span>
+      <p class="about-me">I am a 21-year old software engineer trying to make the cyber world a bit better. How? By
+        contributing to
+        open-source projects and being passionate about my career.
+        I am an anime and music lover, workaholic, I love games, computer games and I am always looking forward to new
+        challenges. Do you have one for me? </p>
+
+      <div class="button-links">
+        <button class="button-email ripple" onclick='window.location.href = "mailto:reymarbc@gmaiil.com";'>
+          <i class="fa fa-envelope"></i>
+          &nbsp;EMAIL ME</button>
+        <button class="button-github ripple" onclick='window.location.href = "https://github.com/Gyakusetsu"''>
+          <i class="fa fa-github"></i>
+          &nbsp;GYAKUSETSU</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "Gyakusetsu", { responsive: true });
+</script>
+
+</html>
