@@ -1,9 +1,5 @@
-#!/usr/bin/env sh
-
-# abort on errors
-set -e
-
 # build
+rmdir dist
 mkdir dist
 
 cp favicon.ico dist
@@ -22,5 +18,5 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:Gyakusetsu/gyakusetsu.github.io.git master
 
-cd -
+cd ..
 
